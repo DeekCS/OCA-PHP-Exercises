@@ -120,3 +120,170 @@ function generate_random_password($str_length) {
 echo generate_random_password(8);
 
 */
+
+#################################################################
+
+#Question 8:
+#8 Write a PHP Script to replace the first word of the sentence with another word.
+
+/*
+function replace_first_word($str, $word) {
+    return str_replace("Hello", $word, $str);
+}
+
+echo replace_first_word("Hello world", "Hi");
+
+*/
+
+#################################################################
+
+#Question 9:
+#9 Write a PHP Script to find the first character that is different between two strings.
+
+/*
+function find_first_difference($str1, $str2) {
+    $str1 = str_split($str1);
+    $str2 = str_split($str2);
+    for ($i = 0; $i < count($str1); $i++) {
+        if ($str1[$i] != $str2[$i]) {
+            return "First difference is at index " . $i . "and is "  . $str1[$i] . " ". "vs " . $str2[$i];
+        }
+    }
+    return "No difference";
+}
+
+echo find_first_difference("dragonball", "dragonboll");
+
+*/
+
+
+#################################################################
+
+#Question 10:
+#10 Write a PHP Script to put a string in an array, use the (var_dump) to view the array.
+/*
+function put_string_in_array($str) {
+    return explode(" ", $str);
+}
+
+echo var_dump(put_string_in_array("Hello world"));
+
+*/
+
+#################################################################
+
+#Question 11:
+#11 Write a PHP Script to print the next letter of inputted letter.
+
+/*
+function next_letter($letter) {
+    $letter = ord($letter);
+    $letter++;
+    return chr($letter);
+}
+
+echo next_letter("a");
+*/
+
+#################################################################
+
+#Question 12:
+#12 Write a PHP Script to insert a string at the specified position in a given string.
+/*
+function insert_string($str, $insert_str, $position) {
+    return substr_replace($str, $insert_str, $position, 0);
+}
+
+echo insert_string("The brown fox", " quick", 3);
+*/
+
+#################################################################
+
+#Question 13:
+#13 Write a PHP Script to remove the zeroes from the given number.
+/*
+function remove_zeroes($num) {
+    return str_replace("0", "", $num);
+}
+
+echo remove_zeroes("00123");
+*/
+
+#################################################################
+
+#Question 14:
+#14 Write a PHP Script to remove part of a string.
+/*
+function remove_part_of_string($str, $start, $end) {
+    return substr_replace($str, "", $start, $end);
+}
+
+echo remove_part_of_string("The quick brown fox jumped over the lazy dog", 15, 5);
+*/
+
+#################################################################
+
+#Question 15:
+#15 Write a PHP Script to remove trailing dashes from a string.
+/*
+function remove_trailing_dashes($str) {
+    return rtrim($str, "-");
+}
+
+echo remove_trailing_dashes("The quick brown fox jumped over the lazy dog---");
+*/
+
+#################################################################
+
+#Question 16:
+#16 Write a PHP Script to remove Special characters from the following string.
+
+/*
+function remove_special_characters($str) {
+    return preg_replace("/[^a-zA-Z0-9]/", " ", $str);
+}
+
+echo remove_special_characters("\"\ 1+2/3*2:2-3/4*3'");
+*/
+
+#################################################################
+
+#Question 17:
+#17 Write a PHP Script to select first 5 words from the following string.
+/*
+function select_first_five_words($str) {
+    return implode(" ", array_slice(explode(" ", $str), 0, 5));
+}
+
+echo select_first_five_words("The quick brown fox jumped over the lazy dog");
+*/
+
+#################################################################
+
+#Question 18:
+#18 Write a PHP Script to remove comma(s) from the following numeric string.
+
+/*
+function remove_commas($str) {
+    return str_replace(",", "", $str);
+}
+
+echo remove_commas("2,543.12");
+
+*/
+
+
+#################################################################
+
+#Question 19:
+#19 Write a PHP Script to print letters from 'a' to 'z'.
+
+/*
+function print_letters_from_a_to_z() {
+    for ($i = 97; $i <= 122; $i++) {
+        echo chr($i) . " ";
+    }
+}
+
+print_letters_from_a_to_z();
+*/
