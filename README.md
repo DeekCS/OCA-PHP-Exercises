@@ -3,5 +3,5 @@
   ###    <li> Loops </li>
   ### <li> Functions </li>
   ### <li> Arrays </li>
-  ### <li> Conditinaol Statments </li> 
+  ### <li> Conditional Statments </li> 
 ### </ul>
